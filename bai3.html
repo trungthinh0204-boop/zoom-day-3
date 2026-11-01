@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3: Thẻ sản phẩm</title>
+    <style>
+       /* ? 1. PHẦN B.1: Reset CSS */
+      *{
+        margin: 0;
+      padding: 0;
+      box-sizing: border-box;}
+       /* 2. PHẦN B.2 & B.5: Cỡ chữ gốc & Tiêu đề h1 */
+    html {
+      font-size: 16px;} 
+
+    h1 {
+      font-size: 2rem;      
+      width: 100vw;        
+      height: 20vh;         
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;}
+       /* 3. PHẦN B.3: Thẻ sản phẩm (card) */
+    h3 {
+      font-size: 1.5rem;  }
+    p {
+      font-size: 1rem;      
+      margin-bottom: 10px;
+    }
+    .card {
+      /* Phần B.3 */
+      width: 50%;            
+      max-width: 400px;     
+      padding: 1.5em;      
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px black;
+      margin: 0 20px 20px 20px;
+      /* Phần C.1: Đặt chữ màu xanh dương cho thẻ sản phẩm */
+      color: blue;}
+     /*  4. PHẦN C.2 & C.3: Link và Tiêu đề h3 trong card*/
+    .card a {
+      color: inherit; 
+      text-decoration: underline;}
+    .card h3 {
+      color: revert; 
+      margin-bottom: 8px;}
+    /*  5. PHẦN B.4: Dòng giá và Số tiền*/
+    .card .price {
+      font-size: 1.25rem;
+      margin-bottom: 12px;}
+    .card .price span {
+      font-size: 1.5em;     
+      font-weight: bold;
+      color: red;}        
+    /*  6. PHẦN C.4: Danh sách ul (Khôi phục dấu chấm tròn)*/
+    ul {
+      list-style-type: revert; 
+      padding-left: revert;  
+      margin: 0 20px;}
+    ul li {
+      margin-bottom: 5px;}
+    </style>
+</head>
+<body>
+    <h1>Danh sách sản phẩm</h1>
+
+    <div class="card">
+      <h3>Điện thoại thông minh</h3>
+      <p class="price">Giá: <span>7.500.000₫</span></p>
+      <p>Một chiếc điện thoại thông minh với màn hình sắc nét và hiệu năng mạnh mẽ.</p>
+      <a href="#">Xem chi tiết</a>
+    </div>
+
+    <div class="card">
+      <h3>Laptop cao cấp</h3>
+      <p class="price">Giá: <span>15.000.000₫</span></p>
+      <p>Laptop với cấu hình mạnh mẽ, thiết kế sang trọng và pin lâu dài.</p>
+      <a href="#">Xem chi tiết</a>
+    </div>
+
+    <div class="card">
+      <h3>Tai nghe không dây</h3>
+      <p class="price">Giá: <span>1.200.000₫</span></p>
+      <p>Tận hưởng âm thanh chất lượng cao mà không bị vướng víu bởi dây cáp.</p>
+      <a href="#">Xem chi tiết</a>
+    </div>
+    
+</body>
+</html>

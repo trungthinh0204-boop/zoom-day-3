@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner giới thiệu</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+
+        body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;}
+
+        /* 2. PHẦN BANNER — NỀN & CHỮ*/
+        .banner {
+        height: 60vh;
+        
+        background-image: 
+            linear-gradient(rgba(44, 42, 42, 0.5), rgba(78, 18, 18, 0.5)), 
+            url('bg.jpg');
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        background-attachment: fixed;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;}
+
+        /* Tiêu đề chính */
+        .banner h1 {
+        color: #9e4e4e;                
+        text-transform: uppercase;     
+        letter-spacing: 4px;           
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Bóng đổ màu đen phía dưới bên phải */
+        }
+
+        /* Câu slogan */
+        .banner .slogan {
+        color: #300202;
+        font-style: italic;         
+        font-weight: 300;              
+        font-size: 1.2rem; }
+
+        /*   3. PHẦN NỘI DUNG*/
+        .content {
+        max-width: 800px;
+        margin: 40px auto;
+        
+        /* Nền chuyển màu dần từ trắng (bên trái) sang xanh nhạt (bên phải) */
+        background: linear-gradient(to right, #ffffff, #e3f2fd);
+        padding: 30px;
+        border-radius: 8px;}
+
+        /* Tiêu đề "Giới thiệu khóa học" */
+        .content h2 {
+        margin-bottom: 20px;
+        color: #241d1d;
+        display: inline-block;
+        border-bottom: 3px solid #007bff; 
+        padding-bottom: 5px;}
+
+        /* Đoạn giới thiệu khóa học */
+        .content p:not(.note) {
+        line-height: 2;                 
+        text-align: justify;            
+        text-indent: 40px;               
+        word-spacing: 3px;              
+        margin-bottom: 20px;
+        color: #7c7070;}
+
+        /* Dòng lưu ý */
+        .content .note {
+        background-color: #dbd069;       
+        color: #996758;                  
+        font-weight: bold;              
+        padding: 12px 15px;
+        border-left: 4px solid #d49d11;
+        border-radius: 4px;}
+    </style>
+     
+   
+<body>
+    <section class="banner">
+  <h1>Học Lập Trình Web</h1>
+  <p class="slogan">Từ con số 0 đến lập trình viên chuyên nghiệp</p>
+</section>
+
+<section class="content">
+  <h2>Giới thiệu khóa học</h2>
+  <p>
+    Khóa học cung cấp kiến thức nền tảng về HTML, CSS và JavaScript.
+    Học viên sẽ được thực hành qua nhiều dự án thực tế, giúp nắm vững kiến thức
+    và tự tin xây dựng website hoàn chỉnh sau khi kết thúc khóa học.
+  </p>
+  <p class="note">Lưu ý: Khóa học khai giảng vào đầu mỗi tháng.</p>
+</section>
+    
+</body>
+</html>

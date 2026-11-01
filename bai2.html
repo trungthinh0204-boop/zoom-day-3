@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2: Menu & Danh sách</title>
+    <style>
+        /* ? 1. PHẦN B.1: Reset CSS */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav a { text-decoration: none; color: black; padding: 5px 8px; display: inline-block; }
+        nav a:hover { color: white; background-color: blue; }
+        nav a:first-child { font-weight: bold; }
+        nav a:last-child { color: red; }
+        nav a:not(:last-child)::after { content: " |"; margin-left: 8px; color: black; font-weight: normal; }
+
+        ul { list-style-type: none; padding-left: 0; }
+        ul li { padding: 8px 12px; }
+        ul li:nth-child(odd) { background-color: white; }
+        ul li:nth-child(even) { background-color: whitesmoke; }
+        ul li:nth-child(3) { color: blue; font-weight: bold; }
+        ul li::before { content: "✔ "; margin-right: 5px; }
+        ul li:hover { font-style: italic; }
+
+        p::first-letter { font-size: 3em; color: red; float: left; line-height: 1; padding-right: 5px; }
+        p::first-line { text-transform: uppercase; }
+
+        input { padding: 8px; border: 1px solid whitesmoke; border-radius: 4px; }
+        input::placeholder { color: whitesmoke; font-style: italic; }
+        input:focus { outline: none; border: 2px solid blue; }
+    </style>
+</head>
+<body>
+<nav>
+  <a href="#">Trang chủ</a>
+  <a href="#">Sản phẩm</a>
+  <a href="#">Tin tức</a>
+  <a href="#">Liên hệ</a>
+</nav>
+
+<h2>Danh sách học viên</h2>
+<ul>
+  <li>Nguyễn Văn A</li>
+  <li>Trần Thị B</li>
+  <li>Lê Văn C</li>
+  <li>Phạm Thị D</li>
+  <li>Hoàng Văn E</li>
+  <li>Vũ Thị F</li>
+</ul>
+
+<p>Lập trình web là một kỹ năng rất quan trọng trong thời đại công nghệ hiện nay.</p>
+
+<input type="text" placeholder="Tìm kiếm...">
+    
+</body>
+</html>
+
